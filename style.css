@@ -19,7 +19,6 @@
         "sidefod";
 }
 
-
 /*ARTICLE*/
 .indhold {
     grid-area: artikel;
@@ -60,9 +59,8 @@
 /*ASIDE*/
 .klassifikation {
     grid-area: sidebar;
-    padding: 2px;
+    padding: 20px;
     background-color: beige;
-    margin-top: 28px
 }
 
 .klassifikations__element {
@@ -77,9 +75,7 @@
 
 .galleri__overskrift {
     padding: 20px;
-    
 }
-
 
 /*FOOTER*/
 .sidefod {
@@ -92,31 +88,8 @@
 /*MEDIA QUERIES*/
 
 /*Tablet and above*/
-@media only screen and (min-width: 650px) {
-    .container {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-template-areas:
-            "sidehoved sidehoved"
-            "artikel sidebar"
-            "artikel galleri"
-            "sidefod sidefod";
-    }
-}
+@media only screen and (min-width: 650px) {}
+
 
 /*Laptop and above*/
-@media only screen and (min-width: 1024px) {
-       .container {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-template-areas:
-            "sidehoved sidehoved"
-            "artikel sidebar"
-            "artikel ..."
-            "galleri galleri"
-            "sidefod sidefod";
-    }    
-    .galleri__billeder {
-    display: flex;
-}
-}
+@media only screen and (min-width: 1024px) {}
